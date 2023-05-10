@@ -5,7 +5,7 @@ resource "google_cloud_run_service" "fiveline_api" {
   template {
     spec {
       containers {
-        image = "us-docker.pkg.dev/cloudrun/container/hello"
+        image = "gcr.io/cloudrun/container/hello"
       }
     }
   }
